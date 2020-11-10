@@ -29,7 +29,6 @@ public class blogController {
         return posts;
     }
 
-
     @CrossOrigin
     @PostMapping("/insert")
     public String createPost(@RequestBody Post post) throws JsonProcessingException {
