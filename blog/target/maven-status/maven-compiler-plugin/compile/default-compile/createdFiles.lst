@@ -1,0 +1,6 @@
+com/jlgh/blog/BlogApplication.class
+com/jlgh/blog/controllers/blogController.class
+com/jlgh/blog/repositories/UserRepositories.class
+com/jlgh/blog/repositories/BlogRepository.class
+com/jlgh/blog/entities/Post.class
+com/jlgh/blog/entities/User.class
