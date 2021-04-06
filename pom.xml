@@ -70,7 +70,7 @@
 		</plugins>
 		<testResources>
 				<testResource>
-					<directory>src/main/java/com.jlgh.blog</directory>
+					<directory>src/main/java</directory>
 				</testResource>
 		</testResources>
 	</build>
