@@ -68,7 +68,12 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-
+		<testResources>
+				<testResource>
+					<directory>src/main/java/com.jlgh.blog</directory>
+				</testResource>
+		</testResources>
 	</build>
+
 
 </project>
