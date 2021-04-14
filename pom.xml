@@ -11,13 +11,13 @@
 	<groupId>com.jlgh</groupId>
 	<artifactId>Blog</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Blog</name>
+	<name>personalPage</name>
 	<description>My Blog</description>
 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
-
+	<packaging>war</packaging>
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
@@ -65,9 +65,15 @@
 			<version>1.4.01</version>
 			<scope>compile</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
+		<finalName>${artifactId}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -80,6 +86,7 @@
 				</testResource>
 		</testResources>
 	</build>
+
 
 
 </project>
