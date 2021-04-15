@@ -79,6 +79,17 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<url>http://ec2-54-237-116-214.compute-1.amazonaws.com:8081</url>
+					<server>tomcat</server>
+					<username>jenkinsUser</username>
+					<password>jenkinsUser</password>
+				</configuration>
+			</plugin>
 		</plugins>
 		<testResources>
 				<testResource>
