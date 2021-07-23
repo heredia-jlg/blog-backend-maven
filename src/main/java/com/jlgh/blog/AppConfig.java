@@ -29,14 +29,13 @@ public class AppConfig{
         public void configure(HttpSecurity http) throws Exception {
             http.cors().and().csrf().disable().authorizeRequests()
                     .antMatchers(HttpMethod.GET,"/posts/showAll").permitAll()
-                    .antMatchers(HttpMethod.POST, "/posts/insertPost").permitAll();
+                    .antMatchers(HttpMethod.POST, "/posts/insertPost").permitAll()
+                    .and().formLogin().loginPage("/login");
         }
-        
+
     }
 
 
 
 
 }
-
-
